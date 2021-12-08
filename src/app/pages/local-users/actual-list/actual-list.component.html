@@ -1,0 +1,26 @@
+<ng-container *ngIf="(users$ | async) as users">
+    <os-header [size]="4">Actual</os-header>
+
+    <users-list
+        *ngIf="users?.length; else emptyUsersTemplate"
+        [users]="users"
+        [actionButtons]="actionButtonsTemplate">
+    </users-list>
+</ng-container>
+
+<ng-template
+    #actionButtonsTemplate
+    let-user>
+    <div class="action-buttons">
+        <os-button
+            (osClick)="onUserDeleteButtonClick(user)">
+            Delete
+        </os-button>
+    </div>
+</ng-template>
+
+<ng-template #emptyUsersTemplate>
+    <os-text class="text-bold">
+        There is no actual local users.
+    </os-text>
+</ng-template>

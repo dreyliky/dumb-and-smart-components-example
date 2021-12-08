@@ -1,0 +1,20 @@
+<form [formGroup]="formGroup">
+    <os-form-field [isStacked]="true">
+        <os-label>Name</os-label>
+
+        <os-text-box
+            [placeholder]="'Enter user name'"
+            [formControl]="formGroup.controls.name">
+        </os-text-box>
+    </os-form-field>
+
+    <os-form-field [isStacked]="true">
+        <os-label>Age</os-label>
+
+        <os-number-box
+            [placeholder]="'Enter user age'"
+            [isAllowDecimal]="false"
+            [formControl]="formGroup.controls.age">
+        </os-number-box>
+    </os-form-field>
+</form>

@@ -1,0 +1,10 @@
+<os-header>Users from Server</os-header>
+
+<users-list
+    *ngIf="(users$ | async) as users; else loadingTemplate"
+    [users]="users">
+</users-list>
+
+<ng-template #loadingTemplate>
+    <os-text>Loading...</os-text>
+</ng-template>

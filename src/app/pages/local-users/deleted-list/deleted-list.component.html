@@ -1,0 +1,29 @@
+<ng-container *ngIf="(users$ | async) as users">
+    <os-header [size]="4">Deleted</os-header>
+
+    <users-list
+        *ngIf="users?.length; else emptyUsersTemplate"
+        [users]="users"
+        [actionButtons]="actionButtonsTemplate">
+    </users-list>
+</ng-container>
+
+<ng-template
+    #actionButtonsTemplate
+    let-user>
+    <div class="action-buttons">
+        <os-button
+            (osClick)="onUserRestoreButtonClick(user)">
+            Restore
+        </os-button>
+
+        <os-button
+            (osClick)="onUserDropButtonClick(user)">
+            Drop
+        </os-button>
+    </div>
+</ng-template>
+
+<ng-template #emptyUsersTemplate>
+    <os-text class="text-bold">-</os-text>
+</ng-template>

@@ -1,0 +1,19 @@
+<os-list>
+    <os-list-item *ngFor="let user of users">
+        <user-avatar
+            class="avatar"
+            [user]="user">
+        </user-avatar>
+
+        <os-text>
+            {{ user.name }}<br />
+            {{ user.age }} years old
+        </os-text>
+
+        <ng-container *ngIf="actionButtons">
+            <ng-container
+                *ngTemplateOutlet="actionButtons; context: { $implicit: user }">
+            </ng-container>
+        </ng-container>
+    </os-list-item>
+</os-list>
