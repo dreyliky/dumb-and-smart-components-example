@@ -1,4 +1,7 @@
-# DumbAndSmartComponents
+# Dumb and Smart components
+
+### Check video on Youtube about this example project
+[![CHECK YOUTUBE VIDEO](https://img.youtube.com/vi/Yo1Bd8Ihkic/0.jpg)](https://www.youtube.com/watch?v=Yo1Bd8Ihkic)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
 
