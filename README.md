@@ -1,7 +1,7 @@
 # Dumb and Smart components
 
 ### Check video on Youtube about this example project
-[![CHECK YOUTUBE VIDEO](https://img.youtube.com/vi/Yo1Bd8Ihkic/0.jpg)](https://www.youtube.com/watch?v=Yo1Bd8Ihkic)
+[![CHECK YOUTUBE VIDEO](https://img.youtube.com/vi/nBSOLZ919mI/0.jpg)](https://www.youtube.com/watch?v=nBSOLZ919mI)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
 
